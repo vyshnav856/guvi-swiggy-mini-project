@@ -1,0 +1,21 @@
+<div class="search-container">
+	<h2>Search</h2>
+
+	<input type="text" [formControl]="searchControl" placeholder="Search foods" class="search-bar" />
+	<div class="rest-dishes-container">
+		<div class="rest-dish" *ngFor="let dish of filteredDish">
+			<div class="dish-left">
+				<p class="dish-name">{{dish.name}}</p>
+				<p class="dish-price">${{dish.price}}</p>
+				<p class="dish-desc">{{dish.desc}}</p>
+
+				<button (click)="addtoFavorites(dish.id)" class="add-favorite">Add to favorites</button>
+			</div>
+
+			<div class="img-cart">
+				<img class="dish-img" [src]="dish.image">
+				<button (click)="addtoCart(dish.id)" class="add-favorite add-cart">Add to cart</button>
+			</div>
+		</div>
+	</div>
+</div>

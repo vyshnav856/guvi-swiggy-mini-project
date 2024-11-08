@@ -1,0 +1,21 @@
+<div class="auth-container">
+	<div class="auth-login">
+		<h2>Login</h2>
+
+		<form class="signup-form" (ngSubmit)="onSubmitLogin()">
+			<input name="username" id="username" [(ngModel)]="username2" type="text" placeholder="username">
+			<input name="password" id="password" [(ngModel)]="password2" type="password" placeholder="password">
+			<button type="submit">Log in</button>
+		</form>
+	</div>
+
+	<div class="auth-signup">
+		<h2>Signup</h2>
+
+		<form class="signup-form" (ngSubmit)="onSubmit()">
+			<input name="username" id="username" [(ngModel)]="username" type="text" placeholder="username">
+			<input name="password" id="password" [(ngModel)]="password" type="password" placeholder="password">
+			<button type="submit">Sign up</button>
+		</form>
+	</div>
+</div>

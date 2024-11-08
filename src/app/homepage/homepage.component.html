@@ -1,0 +1,79 @@
+<div class="featured-foods">
+	<h2>What's on your mind?</h2>
+
+	<div class="featured-foods-list">
+		<img (click)="navigate100()" class="featured-food" src="../../assets/images/featured-biriyani.avif">
+		<img (click)="navigate200()" class="featured-food" src="../../assets/images/featured-pizza.avif">
+		<img (click)="navigate200()" class="featured-food" src="../../assets/images/featured-shawarma.avif">
+		<img (click)="navigate400()" class="featured-food" src="../../assets/images/featured-north.avif">
+		<img (click)="navigate500()" class="featured-food" src="../../assets/images/featured-ice.avif">
+		<img (click)="navigate300()" class="featured-food" src="../../assets/images/featured-south.avif">
+		<img (click)="navigate200()" class="featured-food" src="../../assets/images/featured-burger.avif">
+	</div>
+</div>
+
+<div class="seperator-line"></div>
+
+<div class="featured-restaurants">
+	<h2>Top Restaurant Chains in Vellore</h2>
+
+	<div class="featured-restaurants-list">
+		<div  class="featured-restaurant" *ngFor="let rest of restaurants" (click)="restClick(rest.id)">
+			<img class="restaurant-image" [src]="rest.image">
+			<p class="restaurant-name">{{rest.name}}</p>
+			<p class="restaurant-ratings"><img class="star-icon" src="../../assets/star-icon.svg">{{rest.rating}} - {{rest.distance}}</p>
+			<p class="restaurant-overview">{{rest.overview}}</p>
+			<p class="restaurant-location">{{rest.location}}</p>
+		</div>
+	</div>
+</div>
+
+<div class="seperator-line"></div>
+
+<div class="all-restaurants">
+	<h2>Restaurants with online food delivery in Vellore</h2>
+
+	<div class="all-restaurants-list">
+		<div class="featured-restaurant" *ngFor="let rest of restaurants" (click)="restClick(rest.id)">
+			<img class="restaurant-image" [src]="rest.image">
+			<p class="restaurant-name">{{rest.name}}</p>
+			<p class="restaurant-ratings"><img class="star-icon" src="../../assets/star-icon.svg">{{rest.rating}} - {{rest.distance}}</p>
+			<p class="restaurant-overview">{{rest.overview}}</p>
+			<p class="restaurant-location">{{rest.location}}</p>
+		</div>
+	</div>
+</div>
+
+<div class="seperator-line"></div>
+
+<div class="best-places-1">
+	<h2>Best Places to Eat Across Cities</h2>
+	<div class="best-places-list">
+		<p>Best Restaurants in Bangalore</p>
+		<p>Best Restaurants in Pune</p>
+		<p>Best Restaurants in Mumbai</p>
+		<p>Best Restaurants in Delhi</p>
+		<p>Best Restaurants in Hyderabad</p>
+		<p>Best Restaurants in Kolkata</p>
+	</div>
+</div>
+
+<div class="best-places-1">
+	<h2>Best Cuisines Near Me</h2>
+	<div class="best-places-list">
+		<p>Chinese Restaurant Near Me</p>
+		<p>Indian Restaurant Near Me</p>
+		<p>Kerala Restaurant Near Me</p>
+		<p>Korean Restaurant Near Me</p>
+		<p>Italian Restaurant Near Me</p>
+		<p>Seafood Restaurant Near Me</p>
+	</div>
+</div>
+
+<div class="best-places-1">
+	<h2>Explore Every Restaurant Near Me</h2>
+	<div class="best-places-list">
+		<p>Explore Restaurants Near Me</p>
+		<p>Explore Top Rated Restaurants Near Me</p>
+	</div>
+</div>

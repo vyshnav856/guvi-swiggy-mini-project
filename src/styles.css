@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* orange: #ff5200 */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Figtree";
+}
+
+.seperator-line {
+	width: 80%;
+	margin: 0 auto;
+	height: 2px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+input {
+	font-family: inherit;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+button {
+	font-family: inherit;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: white;
+}
+
+button:hover {
+	cursor: pointer;
+	color: #ff5200;
+	border-color: #ff5200;
+}

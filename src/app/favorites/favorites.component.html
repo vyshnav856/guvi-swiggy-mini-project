@@ -1,0 +1,21 @@
+<div class="fav-container">
+	<h2>Favorites</h2>
+
+	<div class="fav-list">
+		<div *ngFor="let dish of dishes">
+			<ng-container *ngIf="arr.includes(dish.id)">
+				<div class="rest-dish">
+					<div class="dish-left">
+						<p class="dish-name">{{dish.name}}</p>
+						<p class="dish-price">${{dish.price}}</p>
+						<p class="dish-desc">{{dish.desc}}</p>
+					</div>
+		
+					<div class="img-cart">
+						<img class="dish-img" [src]="dish.image">
+					</div>
+				</div>
+			</ng-container>
+		</div>
+	</div>
+</div>

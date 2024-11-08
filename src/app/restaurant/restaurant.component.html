@@ -1,0 +1,25 @@
+<div class="rest-container">
+	<h2 class="rest-name">{{restDetails.name}}</h2>
+	<p>{{restDetails.overview}}</p>
+	<p class="rest-ratings"><img class="star-icon" src="../../assets/star-icon.svg">{{restDetails.rating}} - {{restDetails.distance}}</p>
+	<p>{{restDetails.location}}</p>
+
+	<div class="seperator-line"></div>
+
+	<div class="rest-dishes-container">
+		<div class="rest-dish" *ngFor="let dish of restDetails.dishes">
+			<div class="dish-left">
+				<p class="dish-name">{{dish.name}}</p>
+				<p class="dish-price">${{dish.price}}</p>
+				<p class="dish-desc">{{dish.desc}}</p>
+
+				<button (click)="addtoFavorites(dish.id)" class="add-favorite">Add to favorites</button>
+			</div>
+
+			<div class="img-cart">
+				<img class="dish-img" [src]="dish.image">
+				<button (click)="addtoCart(dish.id)" class="add-favorite add-cart">Add to cart</button>
+			</div>
+		</div>
+	</div>
+</div>
