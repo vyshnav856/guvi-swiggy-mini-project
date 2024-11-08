@@ -20,3 +20,10 @@
 	align-items: flex-start;
 	justify-content: center;
 }
+
+@media(max-width: 600px) {
+	.auth-container {
+		flex-direction: column;
+		gap: 3rem;
+	}
+}
