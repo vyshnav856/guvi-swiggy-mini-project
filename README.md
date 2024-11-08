@@ -1,27 +1,13 @@
-# GuviAngularSwiggy
+# Mini Project: Swiggy Clone Using Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.9.
+- Submitted by: Vyshnav R
+- Email: vyshnavr856@gmail.com
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Project Explanation
+- This project has six main pages: the homepage, the search page, the favorites page, the cart page, the login/signup page, and the restaurant specific pages.
+- The app component contains the navbar and the footer, and they are constant across all pages.
+- In the app component, the main page is the homepage. The homepage displays the featured restaurants and dishes. The user can select a dish or restaurant by clicking on it.
+- The search page is used to search the whole food database of the website.
+- The favorites page is used to store the items marked as favorite by the user. This data is stored in local storage.
+- The login/signup page is used to create and log into accounts. The user data is sent and received using mockapi.
+- The cart page shows the selected items by the user and the total price of the items. It also contains an order button, which will send the order data to mockapi.
